@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WearHouse-Register</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/register.css" />
+
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="container">
+          <a href="WearHouse.html"><h1>WearHouse</h1></a>
+
+          <div id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="navbarmenu">
+            <div class="left">
+              <ul>
+                <li>
+                  <a href="Category.html">Category</a>
+                </li>
+                <li><a href="AboutUs.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="garis"></div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="container">
+        <p class="regis">Register</p>
+
+        <form id="form" action="javascript:void(0);" method="POST">
+          <div class="container2">
+            <div class="container3">
+              <label for="name">Name</label>
+              <div class="pack">
+                <input type="text" name="name" id="name" />
+                <small class="error"></small>
+              </div>
+
+              <label for="eAddress">Email Address</label>
+              <div class="pack">
+                <input type="text" name="eAddress" id="eAddress" />
+                <small class="error"></small>
+              </div>
+
+              <label for="pass">Password</label>
+              <div class="pack">
+                <input type="password" name="pass" id="pass" />
+                <small class="error"></small>
+              </div>
+
+              <label for="conpass">Confirm Password</label>
+              <div class="pack">
+                <input type="password" name="conpass" id="conpass" />
+                <small class="error"></small>
+              </div>
+              <div class="useless"></div>
+              <div class="container4">
+                <div class="remember">
+                  <label>
+                    <input
+                      id="checkbox"
+                      type="checkbox"
+                      checked="checked"
+                      name="checkbox"
+                    />
+                    By clicking register, i agree to the terms and conditions.
+                  </label>
+                  <small id="messages">
+                    Please check the box to agree to the terms and conditions.
+                  </small>
+                </div>
+
+                <div class="sub">
+                  <button type="submit" onclick="return validateInputs(event);">
+                    Register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./../javascript/register.js"></script>
+
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <a href="https://twitter.com/"
+            ><img src="./../asset/twitter.svg" alt=""
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="./../asset/facebook-f.svg" alt=""
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="./../asset/instagram.svg" alt=""
+          /></a>
+        </div>
+        <p>Copyright &copy; 2021 Wellend Phegyansen. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="./../javascript/regisAPI.js"></script>
+    <script src="./../javascript/hamburger.js"></script>
+  </body>
+</html>

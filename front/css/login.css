@@ -1,0 +1,94 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 30px 30px 30px;
+}
+.content .container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.content .container .login {
+  background-color: #f1f3f5;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+
+.content .container2 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  overflow: auto;
+}
+
+.content .container3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+.content .container3 .pack {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .container3 label {
+  text-align: right;
+}
+
+.content .container3 input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: transparent;
+}
+
+.content .container3 input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: transparent;
+}
+
+.content .container4 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content .sub {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.content .sub button {
+  background-color: #0d6efd;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.content .sub a {
+  color: #0d6efd;
+}
+
+form .pack .error {
+  color: red;
+}
+
+.container3 .pack.error input[type="text"] {
+  border-color: red;
+}

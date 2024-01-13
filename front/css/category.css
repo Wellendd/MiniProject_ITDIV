@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+.contentp {
+  display: none;
+  margin: 50px 10px 50px 10px;
+  height: 70vh;
+  align-items: start;
+}
+
+.contentp .container {
+  gap: 35px;
+  background-color: white;
+  padding: 2vw;
+  width: 80%;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentp .container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+
+.contentp .container2 .Add {
+  width: 140px;
+  background-color: #0d6efd;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contentp .categorylist {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.contentp .categorylist table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.contentp .container2 .categorylist button {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contentp .container2 .categorylist .edit {
+  background-color: #ffc107;
+  padding: 5px 15px !important;
+}
+
+.contentp .container2 .categorylist .delete {
+  background-color: red;
+  padding: 10px !important;
+}
+
+.contentp .container2 .categorylist .editdel {
+  display: flex;
+  gap: 10px;
+}
+
+tr {
+  height: 50px;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* popup-form */
+.popcontainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-popup {
+  border: 1px solid rgb(220, 220, 220);
+  width: 500px;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 100%;
+}
+
+.form-popup hr {
+  opacity: 30%;
+}
+
+.judulcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 15px 20px;
+}
+
+.judulcontainer .judul {
+  color: grey !important;
+  background-color: transparent;
+  font-size: 30px;
+  padding: 0px !important;
+  font-weight: 300;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .container3 {
+  padding: 15px 20px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-container .container3 .texts {
+  font-size: 14px;
+}
+
+.form-container .container3 .error {
+  color: red;
+}
+
+.form-container input[type="text"] {
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 10px;
+}
+
+.form-container .btn {
+  display: flex;
+  justify-content: end;
+  padding: 15px 20px 30px 20px;
+}
+
+.form-container .btn button {
+  background-color: #198754;
+  padding: 10px 15px !important;
+}
+
+footer {
+  position: relative;
+  display: none;
+}

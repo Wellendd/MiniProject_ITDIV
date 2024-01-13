@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WearHouse-DashBoard</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="container">
+          <a href="WearHouse.html"><h1>WearHouse</h1></a>
+
+          <div id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="navbarmenu">
+            <div class="left">
+              <ul>
+                <li>
+                  <a href="Category.html">Category</a>
+                </li>
+                <li><a href="AboutUs.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn btndrop">
+                <p id="username" class="dropbtn"></p>
+                <div class="dropdown-arrow dropbtn"></div>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <button onclick="logout()">Log Out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="garis"></div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="container">
+        <div class="dashboard">
+          <p class="dash">Dashboard</p>
+          <p id="replace">You are not logged in</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <a href="https://twitter.com/"
+            ><img src="./../asset/twitter.svg" alt=""
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="./../asset/facebook-f.svg" alt=""
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="./../asset/instagram.svg" alt=""
+          /></a>
+        </div>
+        <p>Copyright &copy; 2021 Wellend Phegyansen. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./../javascript/replaceandlogout.js"></script>
+    <script src="./../javascript/replaceloggedin.js"></script>
+    <script src="./../javascript/hamburger.js"></script>
+  </body>
+</html>
